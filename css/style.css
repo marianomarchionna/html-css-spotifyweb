@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common */
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    height: 90vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/* fine common */
+
+/* main nav*/
+nav {
+    height: 100%;
+    width: 20%;
+}
+
+.logo {
+    height: 10%;
+    width: 100%;
+}
+
+.nav-top {
+    height: 15%;
+    width: 100%;
+}
+
+.nav-center {
+    height: 60%;
+    width: 100%;
+}
+
+.nav-bottom {
+    height: 15%;
+    width: 100%;
+}
+/* fine main nav */
+
+/* main container */
+.container {
+    height: 100%;
+    width: 80%;
+}
+/* fine main container */
+
+/* footer */
+footer {
+    height: 10vh;
+}
+/* fine footer */
+
+/* debug */
+.debug .logo {
+    background-color: brown;
+}
+
+.debug .nav-top {
+    background-color: yellow;
+}
+
+.debug .nav-center {
+    background-color: blue;
+}
+
+.debug .nav-bottom {
+    background-color: red;
+}
+
+.debug .container {
+    background-color: lightcoral;
+}
+
+.debug > footer {
+    background-color: lightskyblue;
+}

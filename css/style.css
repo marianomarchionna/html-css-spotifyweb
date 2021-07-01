@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 main {
@@ -23,6 +23,10 @@ main {
     float: left;
 }
 
+.column {
+    flex-direction: column;
+} 
+
 .clearfix::after {
     content: '';
     display: table;
@@ -34,26 +38,94 @@ main {
 nav {
     height: 100%;
     width: 20%;
+    background-color: black;
+    justify-content: space-between;
 }
 
-.logo {
-    height: 10%;
-    width: 100%;
+.menu-top,
+.nav-bottom {
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
 .nav-top {
-    height: 15%;
-    width: 100%;
+    margin: 20px 0;
 }
 
-.nav-center {
-    height: 60%;
-    width: 100%;
+.logo img {
+    height: 40px;
+    object-fit: cover;
+}
+
+#home {
+    color: white;
+}
+
+.menu-top a,
+.nav-bottom a {
+    text-decoration: none;
+    color: gray;
+}
+
+.menu-top ul li,
+.nav-bottom ul li {
+    list-style: none;
+}
+
+.nav-top ul li img {
+    height: 25px;
+}
+
+.nav-center h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.nav-center .plus {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+    background-color: gray;
+    margin-right: 5px;
+    color: black;
 }
 
 .nav-bottom {
-    height: 15%;
-    width: 100%;
+    margin-bottom: 10px;
+}
+
+.nav-bottom .install-app img{
+    height: 15px;
+    margin-right: 5px;
+}
+
+.nav-bottom .user img{
+    height: 25px;
+    margin-right: 5px ;
+}
+
+.profile-pic{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.nav-bottom hr {
+    width: 90%;
+    margin: 6px 0;
+}
+
+.user span {
+    font-weight: bold;
+    color: white;
 }
 /* fine main nav */
 

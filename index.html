@@ -8,38 +8,64 @@
     <link rel="stylesheet" href="css/style.css">
     <title>SpotifyWeb</title>
 </head>
-<body class="debug clearfix">
+<body class="clearfix">
     
     <main>
 
-        <nav class="float-left">
-            <div class="logo">
-                <img src="" alt="">
-            </div>
-            <div class="nav-top">
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-            <div class="nav-center">
-                <h2></h2>
-                <div class="playlist"></div>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+        <nav class="float-left flex column">
+            <div class="menu-top flex column">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo Spotify">
+                </div>
+                <div class="nav-top">
+                    <ul>
+                        <li>
+                            <a href="#" id="home">
+                            <img src="img/home.svg" alt="Home Spotify">
+                            Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/search.svg" alt="Search Spotify">
+                                Cerca</li>
+                            </a>
+                        <li>
+                            <a href="#">
+                                <img src="img/libreria.svg" alt="Libreria Spotify">
+                                La tua libreria</li>
+                            </a>
+                    </ul>
+                </div>
+                <div class="nav-center">
+                    <h3>PLAYLIST</h3>
+                    <a href="#">
+                        <div>
+                            <span class="plus">+</span><span>Crea Playlist</span>
+                        </div>
+                    </a>
+                    <ul>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                        <li><a href="#">Nome Playlist</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="nav-bottom">
-                <div class="install-app"></div>
+                <div class="install-app">
+                    <a href="#"><img src="img/download.svg" alt="Download APP"><span>Installa app</span></a>
+                </div>
                     <hr>
-                    <div class="user-account"></div>
+                    <div class="user">
+                        <div class="profile-pic">
+                            <img src="img/profile.svg" alt="profile">
+                        </div>
+                        <span>John Doe</span>
+                    </div>
             </div>
         </nav>
 

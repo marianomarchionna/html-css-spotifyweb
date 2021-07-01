@@ -42,14 +42,17 @@ nav {
     justify-content: space-between;
 }
 
-.menu-top,
-.nav-bottom {
-    padding-top: 20px;
+.nav-top {
+    margin: 20px 0;
+}
+
+.nav-top li {
     padding-left: 20px;
 }
 
-.nav-top {
-    margin: 20px 0;
+.logo {
+    padding-left: 20px;
+    padding-top: 20px;
 }
 
 .logo img {
@@ -58,6 +61,10 @@ nav {
 }
 
 #home {
+    border-left: 4px solid #adff2f;
+}
+
+.nav-top #home a {
     color: white;
 }
 
@@ -81,6 +88,10 @@ nav {
     margin-bottom: 10px;
 }
 
+.nav-center {
+    padding-left: 20px;
+}
+
 .nav-center .plus {
     display: inline-block;
     width: 35px;
@@ -88,13 +99,18 @@ nav {
     text-align: center;
     line-height: 35px;
     font-size: 30px;
-    background-color: gray;
+    background-color: #a3a3a3;
     margin-right: 5px;
     color: black;
 }
 
+.nav-center li {
+    padding: 5px 0;
+}
+
 .nav-bottom {
     margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 .nav-bottom .install-app img{
@@ -111,7 +127,7 @@ nav {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: grey;
+    background-color: #808080;
     border-radius: 50%;
     overflow: hidden;
     vertical-align: middle;
@@ -134,11 +150,31 @@ nav {
     height: 100%;
     width: 80%;
 }
+
+.container {
+    background-color: #141922;
+}
+
+.top-main {
+    height: 80px;
+    background-color: #080b12;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+}
+
+.upgrade{
+    border: 1px solid white;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: white;
+}
 /* fine main container */
 
 /* footer */
 footer {
     height: 10vh;
+    background-color: #282828;
 }
 /* fine footer */
 

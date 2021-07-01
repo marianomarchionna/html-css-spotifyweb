@@ -55,6 +55,10 @@ nav {
     margin: 20px 0;
 }
 
+.nav-top #home {
+    padding-left: 16px;
+}
+
 .nav-top li {
     padding-left: 20px;
 }
@@ -77,8 +81,14 @@ nav {
     color: white;
 }
 
+.nav-top li {
+    line-height: 18px;
+    padding-bottom: 5px;
+}
+
 .nav-top ul li img {
     height: 25px;
+    vertical-align: middle;
 }
 
 .nav-center h3 {
@@ -88,6 +98,14 @@ nav {
 
 .nav-center {
     padding-left: 20px;
+}
+
+.nav-center > a > div {
+    line-height: 35px;
+}
+
+.nav-center span {
+    vertical-align: middle;
 }
 
 .nav-center .plus {
@@ -114,6 +132,7 @@ nav {
 .nav-bottom .install-app img{
     height: 15px;
     margin-right: 5px;
+    vertical-align: middle;
 }
 
 .nav-bottom .user img{

@@ -52,12 +52,14 @@ h3 {
 nav {
     height: 100%;
     width: 230px;
+    min-height: 480px;
     background-color: black;
     justify-content: space-between;
 }
 
-.nav-top {
-    margin: 20px 0;
+.menu-top {
+    height: calc(100% - 80px);
+    overflow-y: hidden;
 }
 
 .nav-top #home {
@@ -69,30 +71,37 @@ nav {
 }
 
 .logo {
-    padding-left: 20px;
-    padding-top: 20px;
+    padding: 20px;
 }
 
 .logo img {
-    height: 40px;
-    object-fit: cover;
+    width: 70%;
 }
 
-#home {
+.menu-top .logo-small {
+    display: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav-top ul {
+    line-height: 35px;
+}
+
+.nav-top li:hover {
     border-left: 4px solid #adff2f;
 }
 
-.nav-top #home a {
+.menu-top li a:hover,
+.nav-center a:hover,
+.nav-bottom a:hover,
+.upgrade a:hover {
     color: white;
 }
 
-.nav-top li {
-    line-height: 18px;
-    padding-bottom: 5px;
-}
-
 .nav-top ul li img {
-    height: 25px;
+    height: 26px;
+    margin-right: 5px;
     vertical-align: middle;
 }
 
@@ -101,7 +110,8 @@ nav {
 }
 
 .nav-center {
-    padding-left: 20px;
+    padding: 20px;
+    /* overflow: hidden; */
 }
 
 .nav-center > a > div {
@@ -128,13 +138,19 @@ nav {
     padding: 5px 0;
 }
 
+.nav-center ul {
+    height: 80%;
+    /* overflow-y: auto; */
+}
+
 .nav-bottom {
-    margin-bottom: 10px;
-    padding-left: 20px;
+    height: 80px;
+    padding: 0 20px;
+    justify-content: space-around;
 }
 
 .nav-bottom .install-app img{
-    height: 15px;
+    height: 20px;
     margin-right: 5px;
     vertical-align: middle;
 }
@@ -150,7 +166,7 @@ nav {
     height: 25px;
     background-color: #808080;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden; 
     vertical-align: middle;
     margin-right: 5px;
 }
@@ -170,7 +186,7 @@ nav {
 .container {
     height: 100%;
     width: calc(100% - 230px);
-    overflow-y: hidden;
+    overflow-y: hidden; 
 }
 
 .container {
@@ -186,10 +202,23 @@ nav {
     position: fixed;
 }
 
-.upgrade{
+.upgrade a:hover {
+    color: #adff2f;
+}
+
+.upgrade:hover {
+    border: 1px solid #adff2f;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+.upgrade {
     border: 1px solid white;
     padding: 10px 30px;
     border-radius: 20px;
+}
+
+.upgrade a {
     color: white;
 }
 
@@ -198,15 +227,51 @@ nav {
     justify-content: center;
 }
 
+.main-nav a:hover {
+    color: white;
+    border-bottom: 3px solid #adff2f;
+}
+
+.container-main {
+    overflow-y: auto;
+}
+
 .main-nav > ul {
     width: 60%;
     justify-content: space-around;
 }
 
-.song-img {
-    height: 250px;
+.recently {
+    padding-left: 20px;
 }
 
+.recently h2 {
+    padding: 30px 0;
+
+}
+
+.songs {
+    flex-wrap: wrap;
+}
+
+.songs img {
+    width: 180px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.songs li {
+    width: 180px;
+}
+
+.song-txt {
+    align-items: center;
+}
+
+.song-txt .subtitle-song {
+    color: #a3a3a3;
+    padding-top: 10px;
+}
 /* fine main container */
 
 /* footer left*/
@@ -214,6 +279,15 @@ footer {
     height: 90px;
     background-color: #282828;
     justify-content: space-between;
+}
+
+.footer-left i:hover,
+.footer-right i:hover {
+    color: white;
+}
+
+.footer-center i:hover {
+    color: #adff2f;
 }
 
 .footer-left {
@@ -334,6 +408,34 @@ footer {
     padding-right: 8px;
 }
 /* fine footer right */
+/* media query */
+@media (max-width: 600px) {
+    main nav {
+        width: 50px;
+    }
+
+    main .container {
+        width: calc(100% - 50px);
+    }
+
+    main .top-main {
+        width: calc(100% - 50px);
+    }
+
+    .menu-top .logo-small {
+        display: block;
+        width: 38px;
+    }
+
+    .menu-top .logo,
+    .nav-top span,
+    .nav-center,
+    .nav-bottom span,
+    .nav-bottom hr {
+        display: none;
+    }
+}
+/* fine media query */
 /* debug */
 .debug .logo {
     background-color: brown;

@@ -14,28 +14,31 @@
     
     <main>
 
-        <nav class="float-left flex column">
+        <nav class="float-left">
             <div class="menu-top flex column">
                 <div class="logo">
                     <img src="img/logo.svg" alt="Logo Spotify">
                 </div>
+                <div class="logo-small">
+                    <img src="img/logo-small.svg" alt="Logo Spotify">
+                </div>
                 <div class="nav-top">
                     <ul>
-                        <li id="home">
+                        <li>
                             <a href="#">
                             <img src="img/home.svg" alt="Home Spotify">
-                            Home
+                            <span>Home</span>
                             </a>
                         </li>
                         <li>
                             <a href="#">
                                 <img src="img/search.svg" alt="Search Spotify">
-                                Cerca</li>
+                                <span>Cerca</span>
                             </a>
                         <li>
                             <a href="#">
                                 <img src="img/libreria.svg" alt="Libreria Spotify">
-                                La tua libreria</li>
+                                <span>La tua libreria</span>
                             </a>
                     </ul>
                 </div>
@@ -58,7 +61,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="nav-bottom">
+            <div class="nav-bottom flex column">
                 <div class="install-app">
                     <a href="#"><img src="img/download.svg" alt="Download APP"><span>Installa app</span></a>
                 </div>
@@ -75,42 +78,121 @@
         <div class="container float-left">
             <div class="top-main flex">
                  <div class="upgrade">
-                    EFFETTUA L'UPGRADE
+                     <a href="#">EFFETTUA L'UPGRADE</a>
                 </div> 
-            </div> 
-            <div class="main-nav flex">
-                <ul class="flex">
-                    <li id="evidence">
-                        <a href="#">
-                            IN EVIDENZA
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            PODCAST
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            CLASSIFICHE
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            GENERI E MOOD
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            NUOVE USCITE
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            SCOPRI
-                        </a>
-                    </li>
-                </ul>
+            </div>
+            <div class="container-main"> 
+                <div class="main-nav flex">
+                    <ul class="flex">
+                        <li>
+                            <a href="#">
+                                IN EVIDENZA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                PODCAST
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                CLASSIFICHE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                GENERI E MOOD
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                NUOVE USCITE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                SCOPRI
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <section class="recently">
+                    <h2>Recently Played</h2>
+                    <ul class="songs flex">
+                        <li class="flex column">
+                            <div class="song-img">
+                                <div class="img">
+                                    <img src="img/metal_lifting.jpg" alt="Metal">
+                                    <!-- <i class="far fa-play-circle"></i> -->
+                                </div>
+                            </div>
+                            <div class="song-txt flex column">
+                                <h3 class="title-song">Heavy Metal</h3>
+                                <span class="subtitle-song">Subtitle</span>
+                            </div>
+                        </li>
+                        <li class="flex column">
+                            <div class="song-img">
+                                <div class="img">
+                                    <img src="img/stranger.jpeg" alt="Stranger Things">
+                                    <!-- <i class="far fa-play-circle"></i> -->
+                                </div>
+                            </div>
+                            <div class="song-txt flex column">
+                                <h3 class="title-song">Stranger Things, vol. 1 (a Netflix Original Series Soundtrack)</h3>
+                                <span class="subtitle-song">Kyle Dixon & Michael Stein</span>
+                            </div>
+                        </li>
+                        <li class="flex column">
+                            <div class="song-img">
+                                <div class="img">
+                                    <img src="img/aquietplace.jpeg" alt="Quiet Place">
+                                    <!-- <i class="far fa-play-circle"></i> -->
+                                </div>
+                            </div>
+                            <div class="song-txt flex column">
+                                <h3 class="title-song">A quiet place</h3>
+                                <span class="subtitle-song">Subtitle</span>
+                            </div>
+                        </li>
+                        <li class="flex column">
+                            <div class="song-img">
+                                <div class="img">
+                                    <img src="img/split.jpeg" alt="Split">
+                                    <!-- <i class="far fa-play-circle"></i> -->
+                                </div>
+                            </div>
+                            <div class="song-txt flex column">
+                                <h3 class="title-song">Split</h3>
+                                <span class="subtitle-song">Subtitle</span>
+                            </div>
+                        </li>
+                        <li class="flex column">
+                            <div class="song-img">
+                                <div class="img">
+                                    <img src="img/cure.jpeg" alt="Cure">
+                                    <!-- <i class="far fa-play-circle"></i> -->
+                                </div>
+                            </div>
+                            <div class="song-txt flex column">
+                                <h3 class="title-song">A cure for wellness</h3>
+                                <span class="subtitle-song">Subtitle</span>
+                            </div>
+                        </li>
+                        <li class="flex column">
+                            <div class="song-img">
+                                <div class="img">
+                                    <img src="img/sinister.jpeg" alt="Sinister">
+                                    <!-- <i class="far fa-play-circle"></i> -->
+                                </div>
+                            </div>
+                            <div class="song-txt flex column">
+                                <h3 class="title-song">Sinister</h3>
+                                <span class="subtitle-song">Subtitle</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </div>
     </main>

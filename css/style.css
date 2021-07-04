@@ -46,6 +46,10 @@ h2,
 h3 {
     color: white;
 }
+
+h2 {
+    font-size: 35px;
+}
 /* fine common */
 
 /* main nav*/
@@ -122,7 +126,7 @@ nav {
     vertical-align: middle;
 }
 
-.nav-center .plus {
+.new-playlist .plus {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -233,15 +237,17 @@ nav {
 }
 
 .container-main {
-    overflow-y: auto;
+    overflow-y:auto;
 }
 
 .main-nav > ul {
-    width: 60%;
+    width: 70%;
     justify-content: space-around;
 }
 
-.recently {
+.recently,
+.create,
+.popular {
     padding-left: 20px;
 }
 
@@ -266,11 +272,55 @@ nav {
 
 .song-txt {
     align-items: center;
+    text-align-last: center;
 }
 
-.song-txt .subtitle-song {
+.recently .song-txt .subtitle-song {
     color: #a3a3a3;
     padding-top: 10px;
+}
+
+.recently .songs .song-img:hover img {
+    opacity: 0.5;
+}
+
+.song-img .img {
+    position: relative;
+}
+
+.song-img .far {
+    color: white;
+    font-size: 45px;
+    position: absolute;
+    display: none;
+    left: 47%;
+    top: 47%;
+    transform: translate(-50%, -50%);
+}
+
+.songs .song-img:hover i {
+    display: block;
+}
+
+.create h2,
+.popular h2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.create span,
+.popular span {
+    color: #a3a3a3;
+    font-size: 12px;
+}
+
+.create .songs,
+.popular .songs {
+    padding-top: 30px;
+}
+
+.popular img {
+    border-radius: 50%;
 }
 /* fine main container */
 
@@ -318,6 +368,11 @@ footer {
     width: 60%;
     align-items: center;
     justify-content: space-around;
+}
+
+.footer-left span:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 /* fine footer left*/
 /* footer center */
@@ -379,7 +434,7 @@ footer {
     height: 15px;
     border-radius: 50%;
     position: absolute;
-    left: 15%;
+    left: 19%;
     top: 50%;
     transform: translate(0%, -50%);
     background-color: white;

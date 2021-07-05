@@ -196,6 +196,11 @@ nav {
     color: white;
 }
 
+.install-app:hover img{
+    transform: scale(1.3);
+}
+
+
 .user:hover { 
     cursor: pointer;
 }
@@ -294,7 +299,7 @@ nav {
     position: fixed;
 }
 
-.upgrade a:hover {
+.upgrade:hover a{
     color: #adff2f;
     transform: scale(1.1);
 }
@@ -304,6 +309,7 @@ nav {
     padding: 10px 30px;
     border-radius: 20px;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .upgrade {
@@ -323,8 +329,20 @@ nav {
 }
 
 .main-nav a:hover {
-    color: white;
-    border-bottom: 3px solid #adff2f;
+    color: white;    
+}
+
+.main-nav a:hover .underline{
+    display: block;   
+}
+
+.underline {
+    height: 3px;
+    width: 40%;
+    background-color: #adff2f;
+    position: absolute;
+    left: 30%;
+    display: none;
 }
 
 .main-nav > ul {
@@ -334,6 +352,10 @@ nav {
 
 .main-nav ul li a {
     margin: 0 15px;
+}
+
+.main-nav ul li {
+    position: relative;
 }
 /* sezione recently */
 .recently h2 {
@@ -456,6 +478,7 @@ footer {
 }
 
 .footer-left span:hover {
+    color: white;
     text-decoration: underline;
     cursor: pointer;
 }

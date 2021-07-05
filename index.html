@@ -13,15 +13,20 @@
 <body class="clearfix">
     
     <main>
-
+        <!-- menu navigation a sinistra -->
         <nav class="float-left">
             <div class="menu-top flex column">
+                <!-- logo spotify -->
                 <div class="logo">
                     <img src="img/logo.svg" alt="Logo Spotify">
                 </div>
+                <!-- fine logo spotify -->
+                <!-- logo spotify per widht<600px -->
                 <div class="logo-small">
                     <img src="img/logo-small.svg" alt="Logo Spotify">
                 </div>
+                <!-- fine logo spotify per widht<600px -->
+                <!-- parte menu navigazione superiore -->
                 <div class="nav-top">
                     <ul>
                         <li>
@@ -42,6 +47,8 @@
                             </a>
                     </ul>
                 </div>
+                <!-- fine parte menu navigazione superiore -->
+                <!-- parte menu navigazione centrale -->
                 <div class="nav-center">
                     <h3>PLAYLIST</h3>
                     <a href="#">
@@ -60,7 +67,9 @@
                         <li><a href="#">Nome Playlist</a></li>
                     </ul>
                 </div>
+                <!-- fine parte menu navigazione centrale -->
             </div>
+            <!-- parte menu navigazione inferiore -->
             <div class="nav-bottom flex column">
                 <div class="install-app">
                     <a href="#"><img src="img/download.svg" alt="Download APP"><span>Installa app</span></a>
@@ -73,17 +82,22 @@
                         <span>John Doe</span>
                     </div>
             </div>
+            <!-- parte menu navigazione inferiore -->
         </nav>
-
+        <!-- fine menu navigation a sinistra -->
         <div class="container float-left">
+            <!-- sezione superiore upgrade -->
             <div class="top-main flex">
                  <div class="upgrade">
                      <a href="#">EFFETTUA L'UPGRADE</a>
                 </div> 
             </div>
+            <!-- fine sezione superiore upgrade -->
+            <!-- corpo principale -->
             <div class="container-main"> 
+                <!-- menu navigazione del main -->
                 <div class="main-nav flex">
-                    <ul class="flex">
+                    <ul class="flex wrap">
                         <li>
                             <a href="#">
                                 IN EVIDENZA
@@ -116,6 +130,8 @@
                         </li>
                     </ul>
                 </div>
+                <!-- menu navigazione del main -->
+                <!-- sezione ascoltati di recente -->
                 <section class="recently">
                     <h2>Recently Played</h2>
                     <ul class="songs flex">
@@ -193,6 +209,8 @@
                         </li>
                     </ul>
                 </section>
+                <!-- fine sezione ascoltati di recente -->
+                <!-- sezione creato per John Doe -->
                 <section class="create">
                     <h2>Creato per Jonh Doe</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti.</span>
@@ -201,6 +219,7 @@
                             <div class="song-img">
                                 <div class="img">
                                     <img src="img/radar.jpeg" alt="Release Radar">
+                                    <i class="far fa-play-circle"></i>
                                 </div>
                             </div>
                             <div class="song-txt flex column">
@@ -211,6 +230,7 @@
                             <div class="song-img">
                                 <div class="img">
                                     <img src="img/mixdaily.jpeg" alt="Daily mix">
+                                    <i class="far fa-play-circle"></i>
                                 </div>
                             </div>
                             <div class="song-txt flex column">
@@ -219,6 +239,8 @@
                         </li>
                     </ul>
                 </section>
+                <!-- fine sezione creato per John Doe -->
+                <!-- sezione artisti più popolari -->
                 <section class="popular">
                     <h2>Artisti più popolari</h2>
                     <span>Più ascolti, più accurati saranno i suggerimenti.</span>
@@ -227,6 +249,7 @@
                             <div class="song-img">
                                 <div class="img">
                                     <img src="img/youg.jpeg" alt="Lana del Rey">
+                                    <i class="far fa-play-circle"></i>
                                 </div>
                             </div>
                             <div class="song-txt flex column">
@@ -237,6 +260,7 @@
                             <div class="song-img">
                                 <div class="img">
                                     <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
+                                    <i class="far fa-play-circle"></i>
                                 </div>
                             </div>
                             <div class="song-txt flex column">
@@ -245,11 +269,14 @@
                         </li>
                     </ul>
                 </section>
+                <!-- sezione artisti più popolari -->
             </div>
+            <!-- fine corpo principale -->
         </div>
     </main>
-
+    <!-- footer -->
     <footer class="flex">
+        <!-- parte sinistra footer -->
         <div class="footer-left flex">
             <div class="footer-left-song flex">
                 <div class="footer-song">
@@ -265,6 +292,8 @@
                 <i class="far fa-folder"></i>
             </div>
         </div>
+        <!-- fine parte sinistra footer -->
+        <!-- parte centrale footer -->
         <div class="footer-center flex column">
             <div class="footer-center-top flex">
                 <i class="fas fa-random"></i>
@@ -282,6 +311,8 @@
                 <span id="time4">4:35</span>
             </div>
         </div>
+        <!-- fine parte centrale footer -->
+        <!-- parte destra footer -->
         <div class="footer-right flex">
             <i class="fas fa-list-ul"></i>
             <i class="fas fa-desktop"></i>
@@ -293,6 +324,8 @@
                 </div>
             </div>
         </div>
+        <!-- fine parte destra footer -->
     </footer>
+    <!-- fine footer -->
 </body>
 </html>

@@ -63,7 +63,6 @@ nav {
     min-height: 480px;
     background-color: black;
     justify-content: space-between;
-    position: fixed;
 }
 
 .menu-top li a:hover,
@@ -214,8 +213,6 @@ nav {
     width: calc(100% - 230px);
     overflow: hidden; 
     background-color: #141922;
-    position: fixed;
-    left: 230px;
 }
 
 .container-main {
@@ -295,11 +292,9 @@ nav {
 .top-main {
     height: 80px;
     z-index: 20;
-    width: calc(100% - 230px);
     background-color: #080b12;
     justify-content: flex-end;
     align-items: center;
-    position: fixed;
 }
 
 .upgrade:hover a{
@@ -327,7 +322,7 @@ nav {
 /* fine sezione superiore upgrade */
 /* menu navigazione del main */
 .main-nav {
-    margin-top: 90px;
+    margin-top: 10px;
     justify-content: center;   
 }
 
@@ -385,8 +380,6 @@ nav {
 
 /* footer left*/
 footer {
-    position: fixed;
-    z-index: 999;
     width: 100%;
     height: 90px;
     background-color: #282828;

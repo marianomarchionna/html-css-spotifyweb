@@ -63,6 +63,7 @@ nav {
     min-height: 480px;
     background-color: black;
     justify-content: space-between;
+    position: fixed;
 }
 
 .menu-top li a:hover,
@@ -213,6 +214,8 @@ nav {
     width: calc(100% - 230px);
     overflow: hidden; 
     background-color: #141922;
+    position: fixed;
+    left: 230px;
 }
 
 .container-main {
@@ -604,6 +607,10 @@ footer {
 @media (max-height: 500px) {
     .top-main {
         display: none;
+    }
+
+    .main-nav {
+        margin-top: 10px;
     }
 }
 /* fine media query */
